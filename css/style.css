@@ -1,11 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Open+Sans:wght@600&family=Roboto&family=Ropa+Sans&display=swap");
 
+/*boa prática de programação*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "inter"
 }
+/*estilos básicos*/
+body {
+    background:white;
+}
+
+a {
+    text-decoration: none;
+}
+/*estilização da primeira barra do head*/
 nav {
     max-width: 100%;
     margin-left: auto;
@@ -15,15 +25,7 @@ nav {
     align-items: center;
     padding: 9px 39px 9px 19px;
 }
-
-body {
-    background:white;
-}
-
-a {
-    text-decoration: none;
-}
-
+/*cor de fundo do header*/
 .header {
     background: #DE27FC87;
     box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
@@ -34,7 +36,7 @@ a {
     width: 40%;
     height: auto !important;
 }
-
+/*estilização específicas dos ícones do header*/
 .sacola img{
     width: 35%;
     height: auto !important;
@@ -54,7 +56,7 @@ a {
     width: 50%;
     height: auto !important;
 }
-
+/*estilização do search-box com as transições*/
 .search-box {
 
     background: #ffffff;
@@ -103,6 +105,7 @@ a {
     color: rgba(145, 22, 165, 0.87);
 }
 
+/*estilização da barra de categorias*/
 .topicos p a {
     color: white;
 }
@@ -117,7 +120,7 @@ a {
     height: 40px;
     align-items: center;
 }
-
+/*estilização dos slides com as transições*/
 .slider {
     margin: 0 auto;
     width: 100%;
@@ -144,6 +147,8 @@ a {
 .slide img {
     width: 100%;
 }
+/*estilização do painel de navegação manual dos slides
+e das transições*/
 .manual-navigation {
     position: absolute;
     width: 100%;
@@ -167,23 +172,6 @@ a {
 .manual-btn:hover {
     background-color: rgba(145, 22, 165, 0.87);;
 }
-
-#radio1:checked~.first {
-    margin-left: 0;
-}
-
-#radio2:checked~.first {
-    margin-left: -25%;
-}
-
-#radio3:checked~.first {
-    margin-left: -50%;
-}
-
-#radio4:checked~.first {
-    margin-left: -75%;
-}
-
 .navigation-auto div {
     border: 2px solid #20a6ff;
     padding: 5px;
@@ -204,6 +192,22 @@ a {
     margin-right: 40px;
 }
 
+/*estilização das transições específicas dos radios e suas transições*/
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+#radio4:checked~.first {
+    margin-left: -75%;
+}
 #radio1:checked~.navigation-auto .auto-btn1 {
     background-color: #DE27FC87;
 }
@@ -220,6 +224,8 @@ a {
     background-color:#DE27FC87;
 }
 
+/* estilização da faixa 
+com os destaques da semana*/
 .destaquesFaixa {
     width: 100%;
     background-color: rgba(145, 22, 165, 0.87);
@@ -234,6 +240,8 @@ a {
     margin:auto;
     align-items: center;
 }
+/*estilização dos containers com as fotos dos produtos 
+com destaques da semana*/
 .container {
     display: inline-flex;
     width: auto;
@@ -263,6 +271,8 @@ a {
 .container h4{
     color: gray;
 }
+
+/*estilização da grade com os destaque*/
 .destaque{
     display: flex;
     width: 100%;
@@ -290,6 +300,7 @@ a {
 .destaque h4{
     color: gray;
 }
+/*estilização do botão comprar*/
 .botaoComprar {
     margin-top: 8px;
     -webkit-border-radius: 15px;
@@ -310,6 +321,7 @@ a {
 .botaoComprar:hover{
     background-color: purple;
 }
+/*estilização da grade de categorias*/
 .categoriasP {
     font-size: 25px;
     color: black;
@@ -341,6 +353,7 @@ a {
     margin-bottom: 60px;
 }
 
+/*estilização do footer com os formulários*/
 .recebaEmail {
     background-color: rgba(145, 22, 165, 0.87);;
     display: flex;
@@ -369,7 +382,7 @@ a {
     font-size: 17px;
    
 }
-
+/*estilização do botão cadastrar*/
 .botaoCadastrar {
     -webkit-border-radius: 8px;
     border-radius: 8px;
